@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //判断n是不是素数
+        function isSuShu(n) {
+            var flag = true;
+            for(var i = 2 ; i < n ; i++){
+                if( n%i === 0){
+                    flag = false;
+                    break;
+                }
+            }
+            return flag;
+        }
+        console.log(isSuShu(9));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

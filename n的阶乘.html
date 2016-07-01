@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        //求n的阶乘
+        function getJS(n){
+            var ji = 1 ;
+            for(var i = 1 ; i <= n ; i++){
+                ji *= i ;
+
+            }
+            return ji ;
+        }
+//        console.log(getJS(4));
+
+
+        //求1！+ 2！+　　．．．．ｎ！　
+
+        function getJSH(n){
+            var sum = 0 ;
+            for(var i = 1 ; i <= n ; i++){
+                sum += getJS(i);
+            }
+            return sum;
+        }
+        console.log(getJSH(9));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        //判断是不是闰年
+        function isRun(year){
+            if(year % 4 ===0 && year % 100 !==0 || year % 400 === 0 ){
+                return true;
+            } else {
+                return false;
+            }
+        }
+//        alert(isRun(2016))
+//         function getDays(year,month,day){
+//             var days = day;
+//             var months = [31,28,31,30,31,30,31,31,30,31];
+//             for(i = 0 ; i < month-1 ;i++ ){
+//                 days += months[i];
+//
+//             }
+//             if(month >2 && isRun(year)){
+//                 days++;
+//             }
+//             return days;
+//         }
+//        alert(getDays(2016,8,18));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        function getDays(year,month,day){
+            var days = day;
+            var months = [31,28,31,30,31,30,31,31,30,31];
+            for(i = 0 ;i < month - 1; i++){
+                days = months[i] + days;
+            }
+            if(month >2 && isRun(year)){
+                days++;
+            }
+            return days;
+        }
+        alert(getDays(2018,5,12))
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

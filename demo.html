@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var a = prompt("请输入第一个年龄");
+        var b = prompt("请输入第2个年龄");
+        var c = prompt("请输入第3个年龄");
+        var d = prompt("请输入第4个年龄");
+        var e = prompt("请输入第5个年龄");
+        var year = [a,b,c,d,e];
+        var sum = 0;
+
+        for(i = 0 ; i <5 ;i++){
+            if(year[i] < 0 || year[i] > 100 ){
+                break;
+            }
+            sum =sum + +year[i];
+        }
+        console.log(sum/5);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
